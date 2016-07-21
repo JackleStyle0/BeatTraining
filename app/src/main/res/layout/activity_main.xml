@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.spaky.memtronome.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="@drawable/shape_button"
+        android:text="@string/start"
+        android:textSize="@dimen/btn_start" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="horizontal"
+        android:weightSum="1.3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:padding="@dimen/padding_help">
+
+                <ImageView
+                    android:id="@+id/btn_help"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_help"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cross"
+                    android:textSize="@dimen/txtLine" />
+
+                <ImageView
+                    android:id="@+id/string_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+                <ImageView
+                    android:id="@+id/string_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+                <ImageView
+                    android:id="@+id/string_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+                <ImageView
+                    android:id="@+id/string_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+                <ImageView
+                    android:id="@+id/string_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+                <ImageView
+                    android:id="@+id/string_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:src="@drawable/string_no" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/cross"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txtNote" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_reduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/remove_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="80"
+                android:textSize="@dimen/txtBpm" />
+
+            <TextView
+                android:id="@+id/txt_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Andante"
+                android:textSize="@dimen/txtTypeBpm" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_increment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/add_icon" />
+    </LinearLayout>
+</LinearLayout>

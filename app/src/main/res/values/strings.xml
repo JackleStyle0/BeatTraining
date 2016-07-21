@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Memtronome</string>
+
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+
+    <string name="cross">-</string>
+    <!--
+        https://en.wikipedia.org/wiki/Tempo
+        Largo 40 - 60
+        Larghetto (60–66 bpm)
+        Adagio  (66–76 bpm)
+        Andante (76–108 bpm)
+        Moderato (108–120 bpm)
+        Allegro (120–168 bpm)
+        Vivace  (168–176 bpm)
+        Prestissimo  200 bpm up
+    -->
+    <string-array name="tempo">
+        <item>Largo</item>
+        <item>Larghetto</item>
+        <item>Adagio</item>
+        <item>Adagietto</item>
+        <item>Andante</item>
+        <item>Moderato</item>
+        <item>Allegro</item>
+        <item>Vivace</item>
+        <item>Prestissimo</item>
+    </string-array>
+
+    <string name="unit">bmp</string>
+
+    <string-array name="beat">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="line">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="key">
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+</resources>
